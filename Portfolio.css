@@ -23,7 +23,6 @@
             overflow-x: hidden;
         }
 
-        /* Animations */
         @keyframes fadeInDown {
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -122,7 +121,6 @@
             /* box-shadow: 0 4px 10px rgba(156, 124, 182, 0.3); */
         }
 
-        /* Hero Section */
         .hero-grid {
             display: grid;
             grid-template-columns: 1fr 1.3fr; 
@@ -175,24 +173,6 @@
             border: 3px solid var(--primary);
             background-color: transparent;
         }
-
-        @media (max-width: 992px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding-top: 40px;
-    }
-    .hero-text-side {
-        align-items: center;
-        padding-left: 0;
-        padding-bottom: 60px;
-    }
-    .hero-buttons-row {
-        justify-content: center;
-    }
-    .hero-title { font-size: 52px; }
-    .hero-subtitle { font-size: 28px; }
-}
 
         .hero-curves-wrapper {
             position: absolute;
@@ -270,7 +250,7 @@
         }
         .hero-desc {
             color: var(--text-dark);
-            font-size: 20px;
+            font-size: 25px;
             line-height: 1.6;
             max-width: 580px;
             margin-bottom: 30px;
@@ -388,7 +368,6 @@
             border: 2px solid var(--primary);
         }
 
-        /* تأثيرات الـ Hover */
         .btn-primary:hover {
             background-color: var(--primary-dark);
             transform: translateY(-3px);
@@ -398,22 +377,6 @@
             transform: translateY(-3px);
         }
 
-        @media (max-width: 992px) {
-            .hero-grid {
-                grid-template-columns: 1fr; 
-                text-align: center;
-            }
-            .hero-header, .hero-left-text, .hero-center-image, .hero-right-buttons {
-                grid-column: 1; 
-            }
-            .hero-subtitle {
-                margin-left: 0;
-            }
-            .hero-right-buttons {
-                align-items: center;
-                margin-top: 20px;
-            }
-        }
         section {
             padding: 80px 8%;
         }
@@ -424,7 +387,6 @@
 
         }
 
-        /* About Section */
         .about {
             display: flex;
             gap: 60px;
@@ -468,7 +430,6 @@
             margin-bottom: 20px;
         }
 
-        /* Skills Section */
         .section-header {
             text-align: center;
             margin-bottom: 50px;
@@ -537,7 +498,6 @@
             /* font-family: 'Segoe UI', sans-serif; */
         }
 
-        /* تأثير تفاعلي لطيف جداً عند تمرير الماوس فوق الكرت */
         .skill-card:hover {
             transform: translateY(-5px); 
             box-shadow: 0 10px 20px rgba(156, 124, 182, 0.15); 
@@ -545,24 +505,7 @@
             /* border: 2px solid var(--primary); */
         }
 
-        @media (max-width: 992px) {
-            .skills-grid {
-                grid-template-columns: repeat(3, 1fr); 
-            }
-        }
-
-        @media (max-width: 576px) {
-            .skills-grid {
-                grid-template-columns: repeat(2, 1fr); 
-                gap: 15px;
-            }
-            .skills-main-title {
-                font-size: 28px;
-            }
-        }
-
-        /* Journey Section */
-        .journey-container {
+        .journy-container {
             display: flex;
             flex-direction: column;
             gap: 40px;
@@ -570,12 +513,12 @@
             margin: 0 auto;
         }
 
-        .journey-row {
+        .journy-row {
             display: flex;
             gap: 40px;
         }
 
-        .journey-label {
+        .journy-label {
             flex: 1;
             font-size: 24px;
             color: var(--primary);
@@ -583,14 +526,14 @@
             padding-top: 15px;
         }
 
-        .journey-cards {
+        .journy-cards {
             flex: 3;
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
 
-        .journey-item-card {
+        .journy-item-card {
             background-color: var(--primary-light);
             padding: 20px 25px;
             border-radius: 12px;
@@ -601,13 +544,13 @@
             transition: var(--transition);
         }
 
-        .journey-item-card:hover {
+        .journy-item-card:hover {
             transform: scale(1.02);
             background-color: #eee7f5;
             box-shadow: 0 5px 15px rgba(0,0,0,0.02);
         }
 
-        .journey-icon {
+        .journy-icon {
             width: 45px;
             height: 45px;
             border-radius: 50%;
@@ -619,19 +562,19 @@
             font-size: 18px;
         }
 
-        .journey-details h4 {
+        .journy-details h4 {
             font-size: 20px;
             color: var(--text-dark);
             margin-bottom: 3px;
         }
 
-        .journey-details p {
+        .journy-details p {
             font-size: 18px;
             color: var(--text-muted);
             margin-bottom: 3px;
         }
 
-        .journey-details span {
+        .journy-details span {
             font-size: 16px;
             color: var(--primary);
             font-weight: 500;
@@ -846,7 +789,6 @@
             color: var(--text-muted);
         }
 
-        /* Media Queries for Responsiveness */
         @media (max-width: 992px) {
             .skills-grid, .projects-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -860,6 +802,26 @@
                 text-align: center;
                 padding-top: 30px;
             }
+            .hero-grid {
+                grid-template-columns: 1fr; 
+                text-align: center;
+                padding-top: 40px;
+                padding-bottom: 0px; 
+                align-items: flex-end; 
+            }
+            .hero-text-side {
+                order: 1; 
+                align-items: center;
+                padding-left: 0;
+                padding-bottom: 40px; 
+            }
+            .hero-image-side {
+                order: 2; 
+                height: 380px; 
+                margin-bottom: 0; 
+                display: flex;
+                align-items: flex-end;
+            }
             .hero-quote {
                 border-left: none;
                 border-top: 2px solid var(--primary);
@@ -869,13 +831,28 @@
             .hero-buttons {
                 justify-content: center;
             }
+            .hero-title { 
+                font-size: 52px; 
+            }
+            .hero-subtitle { 
+                font-size: 28px; 
+            }
+            .blob-bg {
+                width: 300px; 
+                height: 300px;
+                bottom: -60px;
+            }
+
             .about {
                 flex-direction: column;
                 gap: 30px;
             }
+            .hero-bg-text{
+                font-size: 130px;
+            }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 576px) {
             header {
                 padding: 15px 5%;
                 flex-direction: column;
@@ -889,7 +866,7 @@
             .skills-grid, .projects-grid {
                 grid-template-columns: 1fr;
             }
-            .journey-row {
+            .journy-row {
                 flex-direction: column;
                 gap: 15px;
             }
@@ -902,5 +879,9 @@
             .blob-wrapper {
                 width: 280px;
                 height: 280px;
+            }
+            .hero-bg-text {
+                font-size: 60px; 
+                top: 8%;
             }
         }
