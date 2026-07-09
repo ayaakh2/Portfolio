@@ -124,7 +124,7 @@
         .hero-grid {
             display: grid;
             grid-template-columns: 1fr 1.3fr; 
-            align-items: flex-end;
+            /* align-items: flex-end; */
             justify-content: center;
             padding: 60px 8% 0px 8%;
             position: relative; 
