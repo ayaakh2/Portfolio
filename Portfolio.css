@@ -88,24 +88,7 @@
             position: relative;
         }
 
-        .navlink::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -5px;
-            left: 0;
-            background-color: var(--primary);
-            transition: var(--transition);
-        }
-
-        .navlink:hover::after, nav ul li a.active::after {
-            width: 100%;
-        }
-
-        .navlink:hover {
-            color: var(--primary);
-        }
+        
 
         .btn-contact-nav {
             background-color: var(--primary);
@@ -837,11 +820,6 @@
             .hero-subtitle { 
                 font-size: 28px; 
             }
-            .blob-bg {
-                width: 300px; 
-                height: 300px;
-                bottom: -60px;
-            }
 
             .about {
                 flex-direction: column;
@@ -884,4 +862,15 @@
                 font-size: 60px; 
                 top: 8%;
             }
+            .circle-left {
+            width: 300px;
+            height: 300px;
+            top: 85%;
+            left: 16%;
+            transform: translateY(-50%);
         }
+    }
+#cont{
+    text-decoration: none;
+}
+    
